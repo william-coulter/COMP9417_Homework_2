@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = "true"
+
+[requires]
+python_version = "3.9"
+
+# If issues installing, run: export SYSTEM_VERSION_COMPAT=1
+# https://github.com/pypa/pipenv/issues/4576#issuecomment-751639556
+[packages]
+seaborn = "0.11.1"
+pandas = "1.2.4"
+matplotlib = "3.4.2"
+scikit-learn = "0.24.2"
+
+[scripts]
+q2a = "python3 ./scripts/q2a.py"
+q2b = "python3 ./scripts/q2b.py"
+q2c = "python3 ./scripts/q2c.py"
+q2e = "python3 ./scripts/q2e.py"
