@@ -50,4 +50,20 @@
 
 \section*{Question 1}
 
+\subsection*{a} 
+The possible values for both \(y_{i}\) and \(\tilde{y}_{i}\) are binary. Even though they have different values
+(\(y_{i}\in\{0,1\}\) and \(\tilde{y}_{i}\in\{-1,1\}\)), the objective of each logistic regression implementation 
+is to divide the dataset into 2 classifications. Because of this, the actual value that each classification has 
+will not affect the parameters that the regression is attempting to optimise (\((\hat{\beta}_{0}, \hat{\beta})\) and
+\((\hat{w}, \hat{c})\)). Therefore the solutions for the parameters being minimised by each regression will be the 
+same.
+
+\(C\) is a hyper-parameter that adjusts the sensitivity that the model has to its coefficients. Compared with the
+standard LASSO parameter \(\lambda\), \(C\) is a multiple of the Loss function whereas \(\lambda\) is a multiple
+of the Penalty.
+
+\subsection*{b}
+
+
+
 \end{document}
