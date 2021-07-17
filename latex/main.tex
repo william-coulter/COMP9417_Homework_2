@@ -63,7 +63,53 @@ standard LASSO parameter \(\lambda\), \(C\) is a multiple of the Loss function w
 of the Penalty.
 
 \subsection*{b}
+\label{1b}
 
+Boxplot of testing accuracy for each value of C:
 
+\includegraphics[scale=0.9]{q1b_boxplot.png}
+
+The value of C returning best results: \textbf{0.18794747474747472}
+
+The testing accuracy of this model: \textbf{76\%}
+
+\newpage
+
+\subsection*{c}
+
+\textbf{From GridSearchCV:}
+
+The value of C returning best results: \textbf{0.012219191919191918}
+
+The testing accuracy of this model: \textbf{75.2\%}
+
+In our answer for b \ref{1b}, we determined the "best" value of C as the value which corresponded to the 
+average lowest \emph{log-loss} value across all folds. The value from the 
+\emph{GridSearchCV} are different because, by default, it determines the 
+"best" value of C as the one which corresponds to the average highest \emph{score} 
+across all folds 
+\footnote{See \emph{scoring} parameter in \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html}{documentation}. 
+If the estimator provided exposes a \emph{score} method and a value for 
+\emph{scoring} is not provided, then \emph{score} is used to determine the 
+"best" value of C}.
+
+We can modify the \emph{GridSearchCV} class by providing our own metric
+for \emph{scoring}. The following code is a scorer that uses 
+the smallest \emph{log-loss} value as its scoring metric.
+
+\begin{verbatim}
+scoring = make_scorer(
+    log_loss,                # The sklearn implementation of log_loss
+    greater_is_better=False, # A smaller log_loss is a better value
+    needs_proba=True         # Calculating log_loss needs the probability predictions 
+)
+\end{verbatim}
+
+This yields the following results:
+
+\emph{grid\_lr.best\_estimator\_}: LogisticRegression(C=0.18188787878787877, penalty='l1', solver='liblinear')
+\emph{grid\_lr.best\_score\_} (lowest log-loss): -0.5374067706086373
+
+This value of \emph{C} matches my value in b \ref{1b}.
 
 \end{document}
