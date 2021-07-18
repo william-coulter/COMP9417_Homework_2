@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.10)  17 JUL 2021 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.6.10)  18 JUL 2021 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1125,64 +1125,86 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 46.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 51.
+(Font)              scaled to size 14.4pt on input line 55.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 51.
+(Font)              scaled to size 14.4pt on input line 55.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 53.
-<../code/outputs//q1b_boxplot.png, id=7, 462.528pt x 346.896pt>
+(Font)              scaled to size 12.0pt on input line 57.
+<../code/outputs//q1b_boxplot.png, id=14, 462.528pt x 346.896pt>
 File: ../code/outputs//q1b_boxplot.png Graphic file (type png)
 <use ../code/outputs//q1b_boxplot.png>
-Package pdftex.def Info: ../code/outputs//q1b_boxplot.png  used on input line 70.
+Package pdftex.def Info: ../code/outputs//q1b_boxplot.png  used on input line 74.
 (pdftex.def)             Requested size: 416.27133pt x 312.2035pt.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
- [1
+(Font)              scaled to size 10.0pt on input line 76.
+ [2 </Users/williamcoulter/Documents/COMP9417/homework_2/latex/../code/outputs//q1b_boxplot.png>]
 
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/williamcoulter/Documents/COMP9417/homework_2/latex/../code/outputs//q1b_boxplot.png>]
-
-Package hyperref Warning: Suppressing empty link on input line 86.
+Package hyperref Warning: Suppressing empty link on input line 90.
 
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 87.
+(Font)              scaled to size 10.0pt on input line 91.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 91.
+(Font)              scaled to size 7.0pt on input line 95.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 94.
+(Font)              scaled to size 8.0pt on input line 98.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 94.
+(Font)              scaled to size 6.0pt on input line 98.
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 94.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 100.
+(Font)              scaled to size 8.0pt on input line 98.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 104.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (3.86157pt too wide) in paragraph at lines 110--112
+Overfull \hbox (3.86157pt too wide) in paragraph at lines 114--116
 []\T1/XCharter-TLF/m/it/10 grid_lr.best_estimator_\T1/XCharter-TLF/m/n/10 : Lo-gis-ti-cRe-gres-sion(C=0.18188787878787877, penalty='l1', solver='liblinear')
  []
 
 
-Package hyperref Warning: Suppressing empty link on input line 113.
+Package hyperref Warning: Suppressing empty link on input line 117.
 
-[2] (/Users/williamcoulter/Documents/COMP9417/homework_2/latex/main.aux)
+[3]
+<../code/outputs//q1b-1.png, id=40, 934.49126pt x 811.03pt>
+File: ../code/outputs//q1b-1.png Graphic file (type png)
+<use ../code/outputs//q1b-1.png>
+Package pdftex.def Info: ../code/outputs//q1b-1.png  used on input line 124.
+(pdftex.def)             Requested size: 467.24449pt x 405.514pt.
+
+Overfull \hbox (12.00038pt too wide) in paragraph at lines 124--125
+[] 
+ []
+
+<../code/outputs//q1b-2.png, id=41, 855.195pt x 667.49374pt>
+File: ../code/outputs//q1b-2.png Graphic file (type png)
+<use ../code/outputs//q1b-2.png>
+Package pdftex.def Info: ../code/outputs//q1b-2.png  used on input line 126.
+(pdftex.def)             Requested size: 427.59647pt x 333.74606pt.
+[4 </Users/williamcoulter/Documents/COMP9417/homework_2/latex/../code/outputs//q1b-1.png>]
+<../code/outputs//q1c.png, id=49, 718.685pt x 616.3025pt>
+File: ../code/outputs//q1c.png Graphic file (type png)
+<use ../code/outputs//q1c.png>
+Package pdftex.def Info: ../code/outputs//q1c.png  used on input line 130.
+(pdftex.def)             Requested size: 359.34161pt x 308.1505pt.
+ [5 </Users/williamcoulter/Documents/COMP9417/homework_2/latex/../code/outputs//q1b-2.png> </Users/williamcoulter/Documents/COMP9417/homework_2/latex/../code/outputs//q1c.png>] (/Users/williamcoulter/Documents/COMP9417/homework_2/latex/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25063 strings out of 478994
- 440423 string characters out of 5858184
+ 25087 strings out of 478994
+ 440933 string characters out of 5858184
  739125 words of memory out of 5000000
- 42047 multiletter control sequences out of 15000+600000
+ 42062 multiletter control sequences out of 15000+600000
  489968 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 138i,8n,141p,599b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 138i,8n,141p,599b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/xcharter/XCharter-Italic.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on /Users/williamcoulter/Documents/COMP9417/homework_2/latex/main.pdf (2 pages, 247782 bytes).
+Output written on /Users/williamcoulter/Documents/COMP9417/homework_2/latex/main.pdf (5 pages, 489420 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

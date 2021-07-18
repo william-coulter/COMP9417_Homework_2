@@ -48,14 +48,18 @@
 %	Main Contents
 %----------------------------------------------------------------------------------------
 
+All code for this homework set is available \href{https://github.com/william-coulter/COMP9417\_Homework\_2/tree/master}{here}.
+
+\newpage
+
 \section*{Question 1}
 
-\subsection*{a} 
+\subsection*{a}
 The possible values for both \(y_{i}\) and \(\tilde{y}_{i}\) are binary. Even though they have different values
-(\(y_{i}\in\{0,1\}\) and \(\tilde{y}_{i}\in\{-1,1\}\)), the objective of each logistic regression implementation 
-is to divide the dataset into 2 classifications. Because of this, the actual value that each classification has 
+(\(y_{i}\in\{0,1\}\) and \(\tilde{y}_{i}\in\{-1,1\}\)), the objective of each logistic regression implementation
+is to divide the dataset into 2 classifications. Because of this, the actual value that each classification has
 will not affect the parameters that the regression is attempting to optimise (\((\hat{\beta}_{0}, \hat{\beta})\) and
-\((\hat{w}, \hat{c})\)). Therefore the solutions for the parameters being minimised by each regression will be the 
+\((\hat{w}, \hat{c})\)). Therefore the solutions for the parameters being minimised by each regression will be the
 same.
 
 \(C\) is a hyper-parameter that adjusts the sensitivity that the model has to its coefficients. Compared with the
@@ -83,25 +87,25 @@ The value of C returning best results: \textbf{0.012219191919191918}
 
 The testing accuracy of this model: \textbf{75.2\%}
 
-In our answer for b \ref{1b}, we determined the "best" value of C as the value which corresponded to the 
-average lowest \emph{log-loss} value across all folds. The value from the 
-\emph{GridSearchCV} are different because, by default, it determines the 
-"best" value of C as the one which corresponds to the average highest \emph{score} 
-across all folds 
-\footnote{See \emph{scoring} parameter in \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html}{documentation}. 
-If the estimator provided exposes a \emph{score} method and a value for 
-\emph{scoring} is not provided, then \emph{score} is used to determine the 
+In our answer for b \ref{1b}, we determined the "best" value of C as the value which corresponded to the
+average lowest \emph{log-loss} value across all folds. The value from the
+\emph{GridSearchCV} are different because, by default, it determines the
+"best" value of C as the one which corresponds to the average highest \emph{score}
+across all folds
+\footnote{See \emph{scoring} parameter in \href{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html}{documentation}.
+If the estimator provided exposes a \emph{score} method and a value for
+\emph{scoring} is not provided, then \emph{score} is used to determine the
 "best" value of C}.
 
 We can modify the \emph{GridSearchCV} class by providing our own metric
-for \emph{scoring}. The following code is a scorer that uses 
+for \emph{scoring}. The following code is a scorer that uses
 the smallest \emph{log-loss} value as its scoring metric.
 
 \begin{verbatim}
 scoring = make_scorer(
     log_loss,                # The sklearn implementation of log_loss
     greater_is_better=False, # A smaller log_loss is a better value
-    needs_proba=True         # Calculating log_loss needs the probability predictions 
+    needs_proba=True         # Calculating log_loss needs the probability predictions
 )
 \end{verbatim}
 
@@ -111,5 +115,18 @@ This yields the following results:
 \emph{grid\_lr.best\_score\_} (lowest log-loss): -0.5374067706086373
 
 This value of \emph{C} matches my value in b \ref{1b}.
+
+\newpage
+\section*{Code For Questions}
+
+\subsection*{q1b}
+
+\includegraphics[scale=0.5]{q1b-1.png}
+
+\includegraphics[scale=0.5]{q1b-2.png}
+
+\subsection*{q1c}
+
+\includegraphics[scale=0.5]{q1c.png}
 
 \end{document}
